@@ -25,3 +25,15 @@ The above vidoes show that:
 2. After the endpoint inside target sphere, the LipsNet poliy produce stable action.
 
 Therefore, LipsNet can keep almost unchanged action after the first few steps. However, MLP has fluctuating action in all the 1000 steps. This is the exact reason why LipsNet is highly effective in this kind of environments.
+
+
+As for the Cheetah environment, the actions need to change rapidly between -1 and 1 to make cheetah move fast.
+The following figures visualize the first two dimensions of action to illustrate it (actually, this rapid change presents in all 6 action dimensions).
+To maintain good enough control performance, LipsNet do not change this phenomenon by reducing Lipschitz constant.
+Therefore, LipsNet is less effective at attenuating action fluctuation on Cheetah because of the nature of the task.
+
+- The first dimension of action in Cheetah
+<img src="./materials/cheetah-action-1.png" width = "40%" height = "40%"/>
+
+- The second dimension of action in Cheetah
+<img src="./materials/cheetah-action-2.png" width = "40%" height = "40%"/>
