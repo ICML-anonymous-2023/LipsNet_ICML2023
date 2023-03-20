@@ -20,9 +20,9 @@ https://user-images.githubusercontent.com/33803151/226159138-f294e249-1899-4a8d-
 <br />
 
 The above vidoes show that:
-1. The maximum steps in Reacher is 1000, but only a few steps are need to rotate the endpoint inside the target sphere.
+1. The maximum steps in Reacher is 1000, but only a few steps (about 100 steps) are need to rotate the endpoint inside the target sphere.
 2. After the endpoint inside target sphere, the MLP poliy produce fluctuating action due to observation noise.
-2. After the endpoint inside target sphere, the LipsNet poliy produce stable action.
+2. After the endpoint inside target sphere, the LipsNet poliy produce stable action (nearly zero changing).
 
 Therefore, LipsNet can keep almost unchanged action after the first few steps. However, MLP has fluctuating action in all the 1000 steps. This is the exact reason why LipsNet is highly effective in this kind of environments.
 
