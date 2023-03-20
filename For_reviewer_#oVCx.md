@@ -1,6 +1,8 @@
 # ICML 2023 Rebuttal: LipsNet
 
 ## For reviewer \#oVCx
+
+### (1). About sample efficiency
 All of the reward curves are shown below.
 
 There is not obvious reduce of sample efficiency.
@@ -23,7 +25,7 @@ There is not obvious reduce of sample efficiency.
 - DMControl Walker
 <img src="./materials/TAR_walker.png" width = "40%" height = "40%"/>
 
-<br />
+### (2). Explanation for how LipsNet-G leads to higher fluctuation
 
 As for the Cartpole environment, it only needs few steps to reach stability.
 
